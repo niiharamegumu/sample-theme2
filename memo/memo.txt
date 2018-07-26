@@ -1,0 +1,26 @@
+//連想配列の基礎
+<?php
+	$args = array(
+		 'niihara' => '新原',
+		 'suyama' => '巣山',
+		 'tano' => '田野'
+	 );
+	 $args['makki'] = 'あらまき';
+	 $args['nii'] = 'はざま';
+
+		$args = array_merge( $args, array( 'miku' => 'いまい' ) );
+
+	 echo '<pre>';
+	var_dump( $args );
+	echo '</pre>';
+
+?>
+
+//繰り返し処理php
+while
+for
+foreach
+
+//関数
+have_posts() => 投稿数分を取得(ex.５件)
+the_post() => 繰り返し内で使用(ex.)
