@@ -15,14 +15,13 @@
 			<ul>
 				<?php
 				$args = array(
-					'cat'            => 40,
-					'posts_per_page' => 10
+					'posts_per_page' => 5
 				);
 
 				query_posts( $args );
 				while( have_posts() ) : the_post();  ?>
 				<li>
-					<time datetime="2015-06-12">
+					<time datetime="<?php the_time( 'Y-m-d' ); ?>">
 					<?php the_time( get_option( 'date_format' ) ) ?>
 					</time>
 					<?php the_title(); ?>
