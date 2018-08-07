@@ -12,7 +12,7 @@ if ( shortcode_exists( 'wp-structuring-markup-breadcrumb' ) ) {
 	<main>
 		<?php if ( have_posts() ) : ?>
 		<section>
-			<?php the_archive_title( '<h1>', '</h1>' ); ?>
+			<h1>検索キーワード : <?php echo get_search_query(); ?></h1>
 			<ul>
 				<?php while ( have_posts() ) : the_post() ?>
 				<li>
