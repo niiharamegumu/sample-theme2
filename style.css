@@ -49,6 +49,16 @@ nav ul li:nth-child(4) a {
 nav ul li a:hover {
   background-position: 0 -70px;
 }
+.breadcrumb {
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+ .breadcrumb li:not(:last-child)::after {
+	content: ">";
+	padding: 0 5px;
+}
 
 .contents {
   display: flex;
