@@ -14,7 +14,8 @@
 			<?php
 			echo date ('Y') . ' ';
 			bloginfo ('name')
-			?> All rights reserved.
+			?>
+			All rights reserved.
 		</small>
 	</div>
 </footer>
