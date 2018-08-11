@@ -1,2 +1,2 @@
 # sample-theme2
-練習用　Word Press Theme
+プログラミング教室のサンプルテーマ練習問題：その２

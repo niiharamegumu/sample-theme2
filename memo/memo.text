@@ -1,0 +1,124 @@
+
+『php大体の使い方』
+	<?php
+		$args = array(
+			'oga' =>'おがさわら',
+			'macchi' =>'しんまち',
+			'aoton' => 'いわた'
+		);
+		$args['makki'] = 'あらまき';
+
+		var_dump($args);
+	 ?>
+
+	 //変数、配列、連想配列、
+
+
+???????
+	 <<function>>
+	 register_nav_menus(
+	 	array(
+	 		'primary2' => 'Primary Menu2'
+	 	)
+		<<header.php>>
+		<?php
+			wp_nav_menu(
+				array(
+					'theme_location' => 'primary2'
+					)
+				);
+		 ?>
+
+
+7/17
+	while ~まで
+	foreach
+	for
+
+	have_posts() 投稿(複数)
+	the_post() 一つ一つの投稿？
+	endwhile 終わり
+
+	<?php the_modified_date(); ?> 更新日
+	the_date 公開日
+
+	ver_dump
+
+	primary　自動でkey
+	unique 一意
+	可変調
+
+	SGML(AB型)→HTML(o型)
+	　　　　　　→XML(B型)独自タグ
+	　　　　　　↓
+	　　　　　　XHTML(A型)
+	　　　　　　↓
+	　　　　　　HTML５
+
+7/19
+	Git 履歴管理ツール
+	github microsoftに買収
+	GitLab
+	GitBucket
+
+	GitHub SV Repogitory
+	1 リポジトリを作る
+	2 リポジトリをローカルにクローン
+	3 リポジトリ内のコードを変更
+	4 コミット！！
+	5 プッシュ！！
+
+	<ローカル>
+	gitのインストールが必要！！
+	Sourece Tree
+
+	readme md
+	Mark Down記法
+
+	＜＜git の更新　ターミナルで＞＞
+	git add README.md（ファイル名）
+	git commit -m "First Commitgit status"（メッセージ）
+	git push
+
+	git status 今の状態を確認
+
+7/26
+	ターミナル
+	ls -a
+	ls -l
+	ls -la
+
+	rwx パーミッション（権限）
+	read 読み込み
+	write 書き込み
+	execute 実行
+	管理者・グループ・ユーザー　の権限の管理が数字でできる
+
+	１０進数を２進数へ
+	１　２　４　８　１６　３２　６４
+	０　０　１　（１００は４）
+
+	＜＜git　ターミナル＞＞
+	1.リモートリポジトリを作る
+	2.リモートリポジトリローカルにクローン
+	3.ローカルリポジトリを編集
+	4.コミット
+	5.追加
+	6.プッシュ
+
+	ブランチを生やす＝コピーを作る
+	マージ＝くっつける
+	コンフリクト＝衝突
+
+
+	ブランチの作り方
+	git branch = ブランチの一覧表示
+	git branch ブランチ名
+	＊緑色は作業中のブランチ
+	git checkout develop 作業ブランチの変更
+	git add README.md =変更ファイルの追加
+	git commit -m "メッセージ"
+
+7/31
+	master は完成した状態で残したい
+	git diff ファイル名　（差分）

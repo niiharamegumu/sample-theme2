@@ -9,14 +9,12 @@
 			代表:<a href="tel:042XXXXXXX">042-XXX-XXXX</a>
 			外来受付:<a href="tel:042XXXXXXX">042-XXX-XXXX</a>
 		</address>
-
 		<small>
 			Copyright
 			<?php
-				echo date ( 'Y' ) . ' ';
-				bloginfo( 'name' );
-			?>
-			All rights reserved.
+			echo date ('Y') . ' ';
+			bloginfo ('name')
+			?> All rights reserved.
 		</small>
 	</div>
 </footer>

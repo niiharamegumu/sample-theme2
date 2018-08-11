@@ -13,23 +13,28 @@
 		<section class="topics">
 			<h2>トピックス</h2>
 			<ul>
+
 				<?php
 				$args = array(
-					'posts_per_page' => 5
+					'cat'            => 41,
+					'posts_per_page' => 10
 				);
-
 				query_posts( $args );
-				while( have_posts() ) : the_post();  ?>
+				while( have_posts() ) : the_post();
+				?>
 				<li>
-					<time datetime="<?php the_time( 'Y-m-d' ); ?>">
-					<?php the_time( get_option( 'date_format' ) ) ?>
+					<time datetime="2015-04-20">
+					<?php the_time( get_option( 'date_format' ) ); ?>
 					</time>
 					<?php the_title(); ?>
 				</li>
-			<?php endwhile ?>
+			<?php endwhile; ?>
 			</ul>
 		</section>
 	</main>
+
 <?php
 		get_sidebar();
- 		get_footer();
+		get_footer();
+
+		
